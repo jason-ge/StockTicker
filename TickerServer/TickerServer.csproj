@@ -16,6 +16,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MessageObjects\MessageObjects.csproj" />
+    <ProjectReference Include="..\RandomTickerGenerator\RandomTickerGenerator.csproj" />
+    <ProjectReference Include="..\TickerGeneratorInterface\TickerGeneratorInterface.csproj" />
+    <ProjectReference Include="..\TickerServerInterface\TickerServerInterface.csproj" />
   </ItemGroup>
 
   <ItemGroup>

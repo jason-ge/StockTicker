@@ -7,10 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnSubscribeTicker1" Content="Subscribe Ticker1" HorizontalAlignment="Left" Margin="36,20,0,0" VerticalAlignment="Top" Width="150" Click="btnSubscribeTicker1_Click"/>
-        <Button x:Name="btnUnsubscribeTicker1" Content="Unsubscribe Ticker1" HorizontalAlignment="Left" Margin="200,20,0,0" VerticalAlignment="Top" Width="148" Click="btnUnsubscribeTicker1_Click"/>
-        <Button x:Name="btnSubscribeTicker2" Content="Subscribe Ticker2" HorizontalAlignment="Left" Margin="430,20,0,0" VerticalAlignment="Top" Width="150" Click="btnSubscribeTicker2_Click"/>
-        <Button x:Name="btnUnsubscribeTicker2" Content="Unsubscribe Ticker2" HorizontalAlignment="Left" Margin="618,20,0,0" VerticalAlignment="Top" Width="148" Click="btnUnsubscribeTicker2_Click"/>
-        <StackPanel x:Name="pnlTickers" Height="NaN" Margin="0,54,0,0"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="579*"/>
+            <ColumnDefinition Width="145*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnSubscribeTicker1" Content="Subscribe Ticker1" HorizontalAlignment="Left" Margin="4,20,0,0" VerticalAlignment="Top" Width="150" 
+                Command="{Binding btnSubscribeTicker_Click}" CommandParameter="Ticker1" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="btnUnsubscribeTicker1" Content="Unsubscribe Ticker1" HorizontalAlignment="Left" Margin="124,20,0,0" VerticalAlignment="Top" Width="148"
+                Command="{Binding btnUnsubscribeTicker_Click}" CommandParameter="Ticker1" Grid.Column="2">
+        </Button>
+        <Button x:Name="btnSubscribeTicker2" Content="Subscribe Ticker2" HorizontalAlignment="Left" Margin="354,20,0,0" VerticalAlignment="Top" Width="150"
+                Command="{Binding btnSubscribeTicker_Click}" CommandParameter="Ticker2" Grid.Column="2"/>
+        <Button x:Name="btnUnsubscribeTicker2" Content="Unsubscribe Ticker2" HorizontalAlignment="Left" Margin="542,20,0,0" VerticalAlignment="Top" Width="148"
+                Command="{Binding btnUnsubscribeTicker_Click}" CommandParameter="Ticker2" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <ListView ItemsSource="{Binding ActiveTickers}" Margin="0,66,0,0" Grid.ColumnSpan="4">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding Title}">
+                        <TextBlock.InputBindings>
+                            <MouseBinding Command="{Binding ShowHistoryCommand}" MouseAction="LeftDoubleClick" />
+                        </TextBlock.InputBindings>
+                    </TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

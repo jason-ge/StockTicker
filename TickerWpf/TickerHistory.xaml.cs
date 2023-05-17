@@ -8,12 +8,12 @@ namespace TickerWpf
     /// </summary>
     public partial class TickerHistory : Window
     {
-        public TickerMessage[] _history;
-        public TickerHistory(TickerMessage[] history)
+        //public TickerMessage[] _history;
+        public TickerHistory()  //TickerMessage[] history)
         {
-            _history = history;
+            //_history = history;
             InitializeComponent();
-            lstTickerHistory.ItemsSource = _history;
+            //lstTickerHistory.ItemsSource = _history;
         }
     }
 }

@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerServer", "TickerServe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageObjects", "MessageObjects\MessageObjects.csproj", "{FDCD968C-3094-4058-8EA8-5FE34271011B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerServiceInterface", "TickerServiceInterface\TickerServiceInterface.csproj", "{00E6903B-0EDD-4422-AAEF-E620735AA2F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerServiceInterface", "TickerServiceInterface\TickerServiceInterface.csproj", "{00E6903B-0EDD-4422-AAEF-E620735AA2F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerWpf", "TickerWpf\TickerWpf.csproj", "{9D7FC109-F5E6-44B6-B8E5-CA6EF4662656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerWpf", "TickerWpf\TickerWpf.csproj", "{9D7FC109-F5E6-44B6-B8E5-CA6EF4662656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerServerInterface", "TickerServerInterface\TickerServerInterface.csproj", "{A310296B-8B67-43AF-9D69-CF2B41D913ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerGeneratorInterface", "TickerGeneratorInterface\TickerGeneratorInterface.csproj", "{D8ACCB3C-BCDB-4AB9-8FD8-6F314913FE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomTickerGenerator", "RandomTickerGenerator\RandomTickerGenerator.csproj", "{E0454426-56B8-4132-A565-5BF2F76B1115}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{9D7FC109-F5E6-44B6-B8E5-CA6EF4662656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D7FC109-F5E6-44B6-B8E5-CA6EF4662656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D7FC109-F5E6-44B6-B8E5-CA6EF4662656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A310296B-8B67-43AF-9D69-CF2B41D913ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A310296B-8B67-43AF-9D69-CF2B41D913ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A310296B-8B67-43AF-9D69-CF2B41D913ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A310296B-8B67-43AF-9D69-CF2B41D913ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8ACCB3C-BCDB-4AB9-8FD8-6F314913FE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8ACCB3C-BCDB-4AB9-8FD8-6F314913FE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8ACCB3C-BCDB-4AB9-8FD8-6F314913FE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8ACCB3C-BCDB-4AB9-8FD8-6F314913FE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0454426-56B8-4132-A565-5BF2F76B1115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0454426-56B8-4132-A565-5BF2F76B1115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0454426-56B8-4132-A565-5BF2F76B1115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0454426-56B8-4132-A565-5BF2F76B1115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
